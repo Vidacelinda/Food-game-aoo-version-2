@@ -1,27 +1,23 @@
 //
-//  FoodLoadViewController.swift
+//  HViewController.swift
 //  FoodGame
 //
-//  Created by Phantom on 12/3/22.
+//  Created by Phantom on 12/9/22.
 //
 
 import UIKit
 import Parse
 
-class FoodLoadViewController: UIViewController {
+class HViewController: UIViewController {
     
-    @IBOutlet weak var randone: UIImageView!
-    @IBOutlet weak var randtwo: UIImageView!
-    @IBOutlet weak var randthree: UIImageView!
-  
+    @IBOutlet weak var hrand: UIImageView!
+    
     
     let foodArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6", ]
     
     
     var randomFoodIndex1 : Int = 0
-    var randomFoodIndex2 : Int = 0
-    var randomFoodIndex3 : Int = 0
-    var randomFoodIndex4 : Int = 0
+
     
     
     override func viewDidLoad() {
@@ -60,23 +56,22 @@ class FoodLoadViewController: UIViewController {
      
         
         randomFoodIndex1 = Int(arc4random_uniform(4))
-        randomFoodIndex2 = Int(arc4random_uniform(4))
+
         
         print(randomFoodIndex1)
         
-        randone.image = UIImage(named: foodArray[randomFoodIndex1])
-        randtwo.image = UIImage(named: foodArray[randomFoodIndex2])
-        randthree.image = UIImage(named: foodArray[randomFoodIndex3])
+        hrand.image = UIImage(named: foodArray[randomFoodIndex1])
+
    
         
     }
     
     
-    @IBAction func tab(_ sender: Any) {
-        updateFoodImages()
-        
-    }
+
     
+    @IBAction func tabb(_ sender: Any) {
+        updateFoodImages()
+    }
     
 
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {

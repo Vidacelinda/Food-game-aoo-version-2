@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B38DA1229443061006D9CB8 /* HViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38DA1129443061006D9CB8 /* HViewController.swift */; };
+		4B38DA1429443073006D9CB8 /* DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38DA1329443073006D9CB8 /* DViewController.swift */; };
+		4B38DA1629443082006D9CB8 /* FViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38DA1529443082006D9CB8 /* FViewController.swift */; };
 		4B59861B293695C40038ECC9 /* RollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B59861A293695C40038ECC9 /* RollViewController.swift */; };
 		4B5E9DB3292724F6001BA999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E9DB2292724F6001BA999 /* AppDelegate.swift */; };
 		4B5E9DB5292724F6001BA999 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E9DB4292724F6001BA999 /* SceneDelegate.swift */; };
@@ -45,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		49D607412DFF49677A5C83E0 /* Pods_FoodGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B38DA1129443061006D9CB8 /* HViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HViewController.swift; sourceTree = "<group>"; };
+		4B38DA1329443073006D9CB8 /* DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DViewController.swift; sourceTree = "<group>"; };
+		4B38DA1529443082006D9CB8 /* FViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FViewController.swift; sourceTree = "<group>"; };
 		4B59861A293695C40038ECC9 /* RollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewController.swift; sourceTree = "<group>"; };
 		4B5E9DAF292724F6001BA999 /* FoodGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5E9DB2292724F6001BA999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +167,9 @@
 				61048852292E9A54002E92BF /* FeedViewController.swift */,
 				4B59861A293695C40038ECC9 /* RollViewController.swift */,
 				4BFE829F293BE30E007F5201 /* FoodLoadViewController.swift */,
+				4B38DA1129443061006D9CB8 /* HViewController.swift */,
+				4B38DA1329443073006D9CB8 /* DViewController.swift */,
+				4B38DA1529443082006D9CB8 /* FViewController.swift */,
 			);
 			path = FoodGame;
 			sourceTree = "<group>";
@@ -422,10 +431,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B5E9DB7292724F6001BA999 /* ViewController.swift in Sources */,
+				4B38DA1429443073006D9CB8 /* DViewController.swift in Sources */,
+				4B38DA1229443061006D9CB8 /* HViewController.swift in Sources */,
 				4B5E9DB3292724F6001BA999 /* AppDelegate.swift in Sources */,
 				4B5E9DB5292724F6001BA999 /* SceneDelegate.swift in Sources */,
 				4B59861B293695C40038ECC9 /* RollViewController.swift in Sources */,
 				6104884F292E9544002E92BF /* LoginViewController.swift in Sources */,
+				4B38DA1629443082006D9CB8 /* FViewController.swift in Sources */,
 				61048853292E9A54002E92BF /* FeedViewController.swift in Sources */,
 				4BFE82A0293BE30E007F5201 /* FoodLoadViewController.swift in Sources */,
 				4B5E9DBD292724F6001BA999 /* FoodGame.xcdatamodeld in Sources */,
