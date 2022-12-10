@@ -13,7 +13,7 @@ class HViewController: UIViewController {
     @IBOutlet weak var hrand: UIImageView!
     
     
-    let foodArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6", ]
+    let foodArray = ["h1", "h2", "h3", "h4", "dice5", "dice6", ]
     
     
     var randomFoodIndex1 : Int = 0

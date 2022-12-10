@@ -14,7 +14,7 @@ class DViewController: UIViewController {
     @IBOutlet weak var drand: UIImageView!
     
     
-    let foodArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6", ]
+    let foodArray = ["d1", "d2", "d3", "d4", "dice5", "dice6", ]
     
     
     var randomFoodIndex1 : Int = 0
