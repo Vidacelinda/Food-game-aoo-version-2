@@ -57,12 +57,8 @@ class FeedViewController: UIViewController {
 
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            
             updateDiceImages()
-            
-            
         }
-        
     }
     
     
@@ -75,43 +71,5 @@ class FeedViewController: UIViewController {
         delegate.window?.rootViewController = loginViewController
     }
     
-    @IBAction func FAKEonLogoutButton(_ sender: Any) {
-        /*
-        PFUser.logOut()
-        
-        let main = UIStoryboard(name: "Main", bundle: nil)
-        let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
-        let delegate = UIApplication.shared.delegate as! SceneDelegate
-       
-        delegate.window?.rootViewController = loginViewController
-        */
-        /*
-        PFUser.logOut()
-        
-        let main = UIStoryboard(name: "Main", bundle: nil)
-        let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
-        
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else { return }
-    
-        delegate.window?.rootViewController = loginViewController
-         */
-        PFUser.logOut()
-        let main = UIStoryboard(name:"Main", bundle: nil)
-        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
-        
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,let delegate = windowScene.delegate as? SceneDelegate else {return }
-        delegate.window?.rootViewController = loginViewController
-    }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

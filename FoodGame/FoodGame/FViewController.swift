@@ -85,7 +85,8 @@ class FViewController: UIViewController {
         
     }
     
-    @IBAction func onLogout(_ sender: Any) {
+    
+    @IBAction func onLogoutButton(_ sender: Any) {
         PFUser.logOut()
         let main = UIStoryboard(name:"Main", bundle: nil)
         let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
