@@ -13,7 +13,7 @@ class HViewController: UIViewController {
     @IBOutlet weak var hrand: UIImageView!
     
     
-    let foodArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6", ]
+    let foodArray = ["h1", "h2", "h3", "h4", "dice5", "dice6", ]
     
     
     var randomFoodIndex1 : Int = 0
@@ -51,6 +51,14 @@ class HViewController: UIViewController {
 //        })
 //    }
     
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+        let main = UIStoryboard(name:"Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+        
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,let delegate = windowScene.delegate as? SceneDelegate else {return }
+        delegate.window?.rootViewController = loginViewController
+    }
     
     func updateFoodImages() {
      

@@ -14,7 +14,7 @@ class DViewController: UIViewController {
     @IBOutlet weak var drand: UIImageView!
     
     
-    let foodArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6", ]
+    let foodArray = ["d1", "d2", "d3", "d4", "dice5", "dice6", ]
     
     
     var randomFoodIndex1 : Int = 0
@@ -55,19 +55,25 @@ class DViewController: UIViewController {
     
     func updateFoodImages() {
      
-        
         randomFoodIndex1 = Int(arc4random_uniform(4))
 
-        
         print(randomFoodIndex1)
         
         drand.image = UIImage(named: foodArray[randomFoodIndex1])
  
-   
-        
     }
     
 
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+        let main = UIStoryboard(name:"Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+        
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,let delegate = windowScene.delegate as? SceneDelegate else {return }
+        delegate.window?.rootViewController = loginViewController
+    }
+    
+    
     @IBAction func tabb(_ sender: Any) {
         updateFoodImages()
     }

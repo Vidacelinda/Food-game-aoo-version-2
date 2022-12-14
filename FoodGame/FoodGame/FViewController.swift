@@ -14,7 +14,7 @@ class FViewController: UIViewController {
   
     @IBOutlet weak var frand: UIImageView!
     
-    let foodArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6", ]
+    let foodArray = ["f1", "f2", "f3", "f4", "dice5", "dice6", ]
     
     
     var randomFoodIndex1 : Int = 0
@@ -85,7 +85,8 @@ class FViewController: UIViewController {
         
     }
     
-    @IBAction func onLogout(_ sender: Any) {
+    
+    @IBAction func onLogoutButton(_ sender: Any) {
         PFUser.logOut()
         let main = UIStoryboard(name:"Main", bundle: nil)
         let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
